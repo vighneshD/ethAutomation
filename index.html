@@ -7,7 +7,7 @@
 <select name="category" id="category">
     <option value="" disabled selected>Select</option>
 </select>
-<button onClick="alert(`Thanks for click`)">
+<button onClick="trckItsworking()">
 Submit
 </button>
 <script>
@@ -26,6 +26,17 @@ var mealsByCategory = {
             }
             document.getElementById("category").innerHTML = catOptions;
         }
+    }
+    
+    function trckItsworking(){
+    
+    var select1=document.getElementById('meal').value;
+    var select2=document.getElementById('category').value;
+    
+        console.log(select1,select2)
+				//alert(select1)
+    
+    
     }
 
 </script>
